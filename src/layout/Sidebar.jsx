@@ -36,6 +36,7 @@ const NAV_ITEMS = {
         { label: "User Management", icon: <PeopleOutlineIcon />, path: "/admin/users" },
         { label: "Reports", icon: <AssessmentOutlinedIcon />, path: "/admin/reports" },
         { label: "Activity Logs", icon: <HistoryOutlinedIcon />, path: "/admin/logs" },
+        { label: "All Requests", icon: <AssessmentOutlinedIcon />, path: "/admin/all-requests" }, // ✅
         { label: "Configuration", icon: <SettingsOutlinedIcon />, path: "/admin/settings" },
     ],
     supervisor: [

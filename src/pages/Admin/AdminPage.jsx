@@ -6,7 +6,8 @@ import UserManagement from "../../components/common/admin/UserManagement/UserMan
 import Reports from "../../components/common/admin/Reports/Reports";
 import ActivityLogs from "../../components/common/admin/ActivityLogs/ActivityLogs";
 import SystemConfiguration from "../../components/common/admin/SystemConfiguration/SystemConfiguration";
-import PendingRequests from "../../components/common/admin/PendingRequests/PendingRequests"; // ✅
+import PendingRequests from "../../components/common/admin/PendingRequests/PendingRequests";
+import AllRequests from "../../components/common/admin/AllRequests/AllRequests"; // ✅
 
 export default function AdminPage() {
   return (
@@ -18,6 +19,7 @@ export default function AdminPage() {
         <Route path="logs" element={<ActivityLogs />} />
         <Route path="settings" element={<SystemConfiguration />} />
         <Route path="pending-requests" element={<PendingRequests />} /> {/* ✅ */}
+        <Route path="all-requests" element={<AllRequests />} /> {/* ✅ */}
         <Route path="*" element={<Navigate to="/admin" replace />} />
       </Routes>
     </MainLayout>
